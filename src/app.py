@@ -105,17 +105,9 @@ def main(page: flet.Page):
                     padding=15,
                     width=400,
                     border_radius=10
-
                 )
-
-
 
     )
 
 
 flet.run(main)
-
-
-# input_idade,
-#                             btn_calcular,
-#                             text_idade,
