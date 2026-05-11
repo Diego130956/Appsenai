@@ -1,9 +1,4 @@
-from logging import disable
-from urllib import response
 
-import flet
-from flet import ThemeMode, Text, View, AppBar, Colors, Button, FloatingActionButton, Icons, TextField, ListView, Card, \
-     Icon, ListTile, PopupMenuButton, PopupMenuItem, Container, Column, Row, CrossAxisAlignment, FontWeight
 
 
 
@@ -11,10 +6,9 @@ from flet import ThemeMode, Text, View, AppBar, Colors, Button, FloatingActionBu
 import asyncio
 
 import flet
-import item
+
 from flet import ThemeMode, View, Colors, ListView, Icons, ListTile, Image, Column, Text, \
-    Pagelet, NavigationBar, NavigationBarDestination, ScrollMode, FontWeight, Card, Row, Colors
-from flet.controls.material import card
+    Pagelet, NavigationBar, NavigationBarDestination, ScrollMode, FontWeight, Card, Row, Colors, TextField, Button
 
 from src.api_endpoint_cadastro import cadastro_cep
 
@@ -108,10 +102,10 @@ def main(page: flet.Page):
     input_ce = TextField(label="CEP", hint_text="Digite o CEP")
     input_numero = TextField(label="Numero", hint_text="Digite o numero da casa")
     btn_salvar = Button("Salvar", width=400, on_click=lambda: salvar_dados())
-    text_cidade = TextField(label="Cidade",disabled=True)
-    text_uf = TextField(label="UF",disabled=True)
-    text_logradouro = TextField(label="Logradouro",disabled=True)
-    text_bairro = TextField(label="Bairro",disabled=True)
+    text_cidade = TextField(label="Cidade", disabled=True, color=Colors.BLACK)
+    text_uf = TextField(label="UF",disabled=True,  color=Colors.BLACK)
+    text_logradouro = TextField(label="Logradouro",disabled=True,  color=Colors.BLACK)
+    text_bairro = TextField(label="Bairro",disabled=True,  color=Colors.BLACK)
     # dados = response.json()
 
     list_view = ListView(height=500)
